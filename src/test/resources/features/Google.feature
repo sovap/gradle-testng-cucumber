@@ -27,4 +27,4 @@ Feature: Example feature
   @test
   Scenario: Example scenario 5
     Then User will sleep for 5 seconds
-    And Scenario will fail
+#    And Scenario will fail
