@@ -10,4 +10,4 @@ Reports can be found in the directory: _build/cucumber-reports_. For failed scen
 
 - **@test** - represent the feature or scenario tag (see: https://cucumber.io/docs/cucumber/api/?lang=java#tags)
 - **threads** - represent the number of parallel threads used to execute the selected scenarios, if not provided a default value stored in _gradle.properties_ is used. 
-- **environment** - represents the name of the environment configuration file (without extension) stored in _resources/environments_, if not provided the default value used is: _Test_ 
+- **environment** - represents the name of the environment configuration file (without extension) stored in _resources/environments_, if not provided the default value used is: _Test_ which reference the file _resources/environments/Test.yaml_.  
