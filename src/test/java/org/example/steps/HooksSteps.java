@@ -42,7 +42,7 @@ public class HooksSteps {
         // delete the record from the hash map
         DriverUtil.driverCache.remove(Thread.currentThread().getId(), driver);
 
-        if (scenario.isFailed()) {
+        if (scenario.isFailed() && driver!=null) {
             // Take a screenshot and embed it in the report.
             final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png","screenshot");

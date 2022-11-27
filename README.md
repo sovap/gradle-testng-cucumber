@@ -1,6 +1,10 @@
+### Framework description
+Basic java, testng, selenium, cucumber, gradle test automation framework.
+
 ### Execution config
 Following command will execute all scenarios from directory: _src/test/resources/features_ that are tagged by the tag: _@test_  
 Scenarios will be executed in a parallel mode in 6 threads (each scenario in a separate java thread). Environment configuration selected is _resources/environments/Test.yaml_.
+Reports can be found in the directory: _build/cucumber-reports_. For failed scenarios if a browser is used a screenshot is saved in the _After_ hook step.
 
 `gradle clean test -Dcucumber.filter.tags="@test" -Pthreads=6 -Denvironment=Test`
 
