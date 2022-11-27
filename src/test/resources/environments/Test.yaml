@@ -1,0 +1,4 @@
+app.url:            https://www.google.com
+wait.explicit:      30
+browser.width:      1920
+browser.height:     1080
